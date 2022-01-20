@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+/*
+    Текст: #194CC9
+    Фон: #A1D6FE
+    Подложка: #E7F5FF
+    День: #81B3FF80 50%
+    Текущий день: #3073DC
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.calendar {
+  margin: 5% auto;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.navigation {
+  padding-top: 23px;
+  padding-bottom: 22px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-right {
+  transform: rotate(-180deg);
+}
+
+.arrow {
+  width: 13px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.arrow img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.month {
+  color: #194cc9;
+  font-size: 22px;
+}
+
+.month-spring {
+  color: #ff327b;
+}
+
+.month-summer {
+  color: #e88b00;
+}
+
+.month-fall {
+  color: #ff4228;
+}
+
+.main {
+  width: 100%;
+  height: 430px;
+  background-color: #a1d6fe;
+  border-radius: 30px;
+}
+
+.main-spring {
+  background-color: #fea1c2;
+}
+
+.main-summer {
+  background-color: #ffe072;
+}
+
+.main-fall {
+  background-color: #ffb097;
+}
+
+.weekdays {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 372px;
+  margin: 0 auto;
+  padding: 13px 0;
+  font-size: 15px;
+}
+
+.days {
+  width: 440px;
+  height: 360px;
+  background-color: rgba(100%, 100%, 100%, 0.65);
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.days-flex {
+  margin: 0 auto;
+  padding: 15px;
+  width: 406px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.day {
+  margin: 3px 2.5px;
+  width: 50px;
+  height: 50px;
+  background-color: #81b3ff80;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.day-active {
+  color: white;
+  background-color: #3073dc;
+}
+
+.day-active-spring {
+  background-color: #ff508e;
+}
+
+.day-active-summer {
+  background-color: #ffa800;
+}
+
+.day-active-fall {
+  background-color: #ff5a43;
+}
+
+.day-transparent {
+  opacity: 0;
+}
+
+.day-spring {
+  background-color: #ffbbe0;
+}
+
+.day-summer {
+  background-color: #ffdba5;
+}
+
+.day-fall {
+  background-color: #ffc1c1;
+}
